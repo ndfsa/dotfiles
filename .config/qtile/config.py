@@ -237,6 +237,18 @@ screens = [
                 widget.Sep(
                         padding=10
                         ),
+                widget.Battery(
+                        format="{char} {percent:2.0%}",
+                        charge_char='',
+                        discharge_char='',
+                        emptpy_char='',
+                        full_char='',
+                        unknown_char='',
+                        low_backgroud=Colors.red
+                        ),
+                widget.Sep(
+                        padding=10
+                        ),
                 widget.Clock(
                         format=' %Y-%m-%d %a %H:%M',
                         padding=15,
